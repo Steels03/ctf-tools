@@ -1,2 +1,2 @@
 # CTF-Scripts
-Home made scripts used during CTF
+Home made scripts used during CTF.
