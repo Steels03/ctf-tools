@@ -8,7 +8,6 @@ def shell(url):
         r = requests.get(url+cmd)
         print(r.text)
         cmd = urllib.parse.quote_plus(input('$ '))
-        print(cmd)
 
 
 def main():
